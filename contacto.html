@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toothie | Contacto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="layout">
+    <header class="header">
+        <a href="./index.html" class="header-link">
+            <img class="header-link__logo header-link__logo--sizes" src="./images/logo_temporal.png" alt="Logo de Toothie">
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Inicio</a></li>
+                <li class="header-nav__item"><a href="./nosotros.html" class="header-nav__link">Nosotros</a></li>
+                <li class="header-nav__item"><a href="./servicios.html" class="header-nav__link">Servicios</a></li>
+                <li class="header-nav__item"><a href="./pacientes.html" class="header-nav__link">Nuevos pacientes</a></li>
+                <li class="header-nav__item"><a href="./contacto.html" class="header-nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main main-contacto main-contacto--grid">
+        <h1 class="main-contacto__h1">Contacto</h1>
+        <div class="main-contacto__div">
+            <!-- MEDIOS DE CONTACTO -->
+            <article class="main-div__article">
+                <h2>Medios de contacto:</h2>
+                <div class="container-info">
+                    <!-- TELÉFONO FIJO   -->
+                    <div class="container-row container-contactos">
+                        <i class="fas fa-phone"></i>
+                        <div class="card-info">
+                            <h3>Teléfono fijo</h3>
+                            <p>493 9641</p>
+                        </div>
+                    </div>
+                    <!-- TELÉFONO CELULAR -->
+                    <div class="container-row container-contactos">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="card-info">
+                            <h3>WhatsApp</h3>
+                            <p>+51 969 606 909</p>
+                        </div>
+                    </div>
+                    <!-- DIRECCIÓN -->
+                    <div class="container-row container-contactos">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="card-info">
+                            <h3>Dirección</h3>
+                            <p>Calle Aldabas 559 Oficina 301. Las Gardenias, Surco. Lima, Perú.</p>
+                        </div>
+                    </div>
+                    <!-- HORARIO DE ATENCIÓN -->
+                    <div class="container-row container-contactos">
+                        <i class="far fa-clock"></i>
+                        <div class="card-info">
+                            <h3>Horario de atención</h3>
+                            <p>Lunes a Viernes: 9:00 a 13:30 y 15:30 a 20:00<br>Sábados: 9:00 a 13:30</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- FORMULARIO -->
+            <article class="main-article__form">
+                <h2 class="article-form__h2">Escríbenos un mensaje</h2>
+                <p>Tan pronto como lo leamos recibirás una respuesta. 😄</p>
+                <form action="" id="formulario-contacto">
+                    <input type="text" name="nombre" id="" placeholder="Nombre" required autocomplete="off">
+                    <input type="email" name="email" id="" placeholder="Email" required autocomplete="off">
+                    <textarea name="mensaje" id="" cols="30" rows="6" placeholder="Mensaje" required></textarea>
+                    <input class="button__agendar" type="submit" value="ENVIAR MENSAJE" id="boton-enviar">   
+                </form>
+            </article>
+        </div>
+        <!-- GOOGLE MAPS -->
+        <article class="main-article__aside">
+            <h2>Ubicación:</h2>
+            <div class="iframe-container">
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7801.465827009035!2d-76.983275!3d-12.130418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b875b691ee71%3A0xf4cb040c502444cc!2sC.%20Aldabas%20559%2C%20Santiago%20de%20Surco%2015039%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1642004919985!5m2!1ses!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">Toothie | Odontología especializada | Todos los derechos reservados &copy 2022</p>
+    </footer>
+</body>
+</html>
