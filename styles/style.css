@@ -1,706 +1,75 @@
-/* IMPORT GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-/* GLOBAL RESET */
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
-}
-
-/* ANIMACION KEYFRAME CON GRADIENTE */
-h1 {
-    text-transform: uppercase;
-    background-image: linear-gradient(
-        -225deg,
-        #231557 0%,
-        #44107a 29%,
-        #ff1361 67%,
-        #fff800 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-}
-
-/* ETIQUETAS HTML */
 body {
-    font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    width: 100%;
-}
-
-i { 
-    font-size: 1.8rem;
-}
-
-iframe {
-    border-radius: 5%;
-}
-
-/* BODY LAYOUT */
-.layout {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* HEADER */
-.header {
+.header__nav--color {
     background-color: #0bdbb6;
-    height: 64px;
-    
-    display: flex;
-    justify-content: space-around;
-}
-
-.header-link__logo:hover {
-    transform: scale(0.9);
-}
-
-.header-link__logo--sizes {
-    height: 64px;
-    width: 100%;
-}
-
-.header-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header-nav__list {
-    display: flex;
-    align-items: space-between;
-    list-style: none;
-    gap: 24px
-}
-
-.header-nav__item {
-    display: flex;
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.header-nav__link {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.header-nav__link:hover {
-    color: #DADADA;
 }
 
 /* MAIN */
-.main {
+.main-content {
     overflow: auto;
     flex: 1;
 }
 
-/* MAIN - MEDIA QUERIES */
-@media screen and (max-width: 320px) {
-    h1 { font-size: 2.4rem; }
-
-    h2 { font-size: 1.2rem; }
-
-    h3 { font-size: 1rem; }
-
-    p { font-size: 0.8rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section"
-            "aside"
-            "button";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: wrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2";
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article"
-            "form"
-            "aside";
-    }
+.section__hr--size {
+    width: 40%;
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
-    h1 { font-size: 4.8rem; }
-
-    h2 { font-size: 1.2rem; }
-
-    h3 { font-size: 1.8rem; }
-
-    p { font-size: 1.6rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section"
-            "aside"
-            "button";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: wrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2";
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article"
-            "form"
-            "aside";
-    }
+.carrusel__img {
+    object-fit: cover;
 }
 
-@media screen and (min-width: 481px) and (max-width: 600px) {
-    h1 { font-size: 4.8rem; }
-
-    h2 { font-size: 1.2rem; }
-
-    h3 { font-size: 1.8rem; }
-
-    p { font-size: 1.6rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section"
-            "aside"
-            "button";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: wrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2";
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article"
-            "form"
-            "aside";
-    }
+.card__width {
+    width: 25rem;
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
-    h1 { font-size: 4.8rem; }
-
-    h2 { font-size: 1.2rem; }
-
-    h3 { font-size: 1.8rem; }
-
-    p { font-size: 1.6rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section"
-            "aside"
-            "button";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: wrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2";;
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article"
-            "form"
-            "aside";
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-    h1 { font-size: 6.4rem; }
-
-    h2 { font-size: 1.2rem; }
-
-    h3 { font-size: 1.8rem; }
-
-    p { font-size: 1.6rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section aside"
-            "button aside";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: wrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2";;
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article"
-            "form"
-            "aside";
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-    h1 { font-size: 7.2rem; }
-
-    h2 { font-size: 2.4rem; }
-
-    h3 { font-size: 1.8rem; }
-
-    p { font-size: 1.6rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section aside"
-            "button aside";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: wrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2";
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article"
-            "form"
-            "aside";
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    h1 { font-size: 7.2rem; }
-
-    h2 { font-size: 2.4rem; }
-
-    h3 { font-size: 1.8rem; }
-
-    p { font-size: 1.6rem; }
-    /* INDEX */
-    .main-index--grid {
-        display: grid;
-        grid-template-areas: 
-            "section aside"
-            "button aside";
-    }
-    /* NOSOTROS */
-    .main-nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-            "title"
-            "article1"
-            "article2"
-            "testimonios";
-    }
-    /* SERVICIOS */
-    .main-servicios--grid {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "descripcion"
-            "servicios";
-    }
-    .container-servicios {
-        display: flex;
-        grid-area: servicios;
-        flex-wrap: nowrap;
-    }
-    /* NUEVOS PACIENTES */
-    .main-pacientes--grid {
-        display: grid;
-        grid-template-areas: 
-            "title title"
-            "article1 article2";
-    }
-    /* CONTACTO */
-    .main-contacto--grid {
-        display: grid;
-        grid-template-areas: 
-            "title title"
-            "article aside"
-            "form aside";
-    }
-}
-/* MAIN - INDEX */
-.main-section {
-    grid-area: section;
+.horizontal-card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main-section--padding {
-    padding-left: 12.8rem;
-}
-
-.slogan {
-    /* align-self: flex-end; */
-    justify-self: flex-end;
-}
-
-.main-section-button {
-    grid-area: button;
-    height: fit-content;
-}
-
-.main-section__line {
-    width: 210px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.button__agendar {
-    border: none;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    padding: 16px 32px;
-    border-radius: 12px;
-    background-color: #0bdbb6;
-}
-
-.button__agendar:hover {
-    cursor: pointer;
-    background-color: #0ac3a2;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 56px 0 rgba(0,0,0,0.19);
-}
-
-.main-aside {
-    grid-area: aside;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    width: 50rem;
 }
 
-.main-aside__carrusel--size {
-    max-height: 400px;
-    object-fit: contain;
+.horizontal-card--background {
+    background-color: #f9f6f2;
 }
 
-.main-aside__carrusel--border {
-    border-radius: 6%;
-}
-/* MAIN - NOSOTROS */
-.article-beneficios {
-    display: flex;
-    flex-direction: column;
+.horizontal-card--border {
+    border-radius: 0.8rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
 }
 
-.article-beneficios--margin {
-    margin: 48px;
+.horizontal-card-img {
+    height: 4rem;
+    margin: 0.5rem;
 }
 
-.main-nosotros__h1 {
-    grid-area: title;
-    display: flex;
-    justify-content: center;
+.horizontal-card-icon {
+    font-size: 1.5rem;
 }
 
-#article-beneficios1 {
-    grid-area: article1;
-}
-
-#article-beneficios2 {
-    grid-area: article2;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.article-ul__li {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
-}
-
-#testimonios {
-    grid-area: testimonios;
-}
-
-.container-row {
-    display: flex;
-    gap: 24px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.card__image {
-    height: 75px;
-    /* width: 75px; */
-    border-radius: 25%;
-}
-/* MAIN - SERVICIOS */
-.main-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-servicios__title {
-    grid-area: title;
-}
-
-.main-servicios__descripcion {
-    grid-area: descripcion;
-}
-/* MAIN - NUEVOS PACIENTES */
-.main-pacientes__h1 {
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-pacientes__article {
-    display: flex;
-    flex-direction: column;
-    padding: 48px;
-}
-
-#article1 {
-    grid-area: article1;
-}
-
-#article2 {
-    grid-area: article2;
-}
-
-.main-article__h2 {
-    margin-bottom: 24px;
-}
-
-.main-article__p {
-    margin-bottom: 12px;
-}
-
-#lista-empresas-aseguradoras {
-    display: flex;
-    justify-content: center;
-}
-
-.lista-empresas-ul__li {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
-}
-
-/* MAIN - CONTACTO */
-.main-contacto__h1 {
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-}
-
-.main-div__article {
-    grid-area: article;
-}
-
-.main-article__form {
-    grid-area: form;
-}
-
-.main-article__aside {
-    grid-area: aside;
+.horizontal-card-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main-contacto__div {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+.btn-formulario__width {
+    width: 40%;
+    min-width: fit-content;
 }
 
-.container-contactos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.mapa {
+    border-radius: 5%;
 }
 
 .iframe-container {
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     height: 75%;
 }
 
@@ -709,29 +78,11 @@ iframe {
     height: 100%;
 }
 
-#formulario-contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 2.4rem;
-}
-
-#boton-enviar {
-    width: fit-content;
-    align-self: center;
-}
-
 /* FOOTER */
-.footer {
-    background-color: teal;
-    height: 64px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.footer__div--bgcolor {
+    background-color: #0bdbb6;
 }
 
-.footer__p {
-    color: #FFFFFF;
+.footer__div--color {
+    color: white;
 }

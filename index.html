@@ -4,49 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toothie | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+    <title>Toothie | Inicio</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
-<body class="layout">
+<body class="d-flex flex-column">
     <header class="header">
-        <a href="./index.html" class="header-link">
-            <img class="header-link__logo header-link__logo--sizes" src="./images/logo_temporal.png" alt="Logo de Toothie">
-        </a>
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Inicio</a></li>
-                <li class="header-nav__item"><a href="./nosotros.html" class="header-nav__link">Nosotros</a></li>
-                <li class="header-nav__item"><a href="./servicios.html" class="header-nav__link">Servicios</a></li>
-                <li class="header-nav__item"><a href="./pacientes.html" class="header-nav__link">Nuevos pacientes</a></li>
-                <li class="header-nav__item"><a href="./contacto.html" class="header-nav__link">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top header__nav--color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    Toothie
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pacientes.html">Nuevos pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="main main-index--grid">
-        <section class="main-section main-section--padding">
-            <!-- Info superior -->
-            <p class="main-section__p">Odontología especializada</p>
-            <!-- Contenido Central -->
-            <hr class="main-section__line">
-            <h1>Tu sonrisa en las<br>mejores manos</h1>
-            <hr class="main-section__line">>
-            <p class="slogan">Una sonrisa no es para tanto,<br>es para siempre.</p>
+    <main class="container-fluid main-content">
+        <section class="row">
+            <section class="col-xs-12 col-sm-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center align-items-center">
+                <!-- Info superior -->
+                <p class="mb-0 mt-3">Odontología especializada</p>
+                <!-- Contenido Central -->
+                <hr class="section__hr--size">
+                <h1 class="display-1">Tu sonrisa en las<br>mejores manos</h1>
+                <hr class="section__hr--size">
+                <!-- Slogan -->
+                <p>Una sonrisa no es para tanto, es para siempre.</p>
+            </section>
+            <aside class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    <!-- Imágenes -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://st2.depositphotos.com/6222352/9775/v/950/depositphotos_97757244-stock-illustration-happy-cartoon-tooth-and-dentist.jpg" alt="Toothie equipo" class="d-block w-100 carrusel__img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/originals/45/67/95/456795033917a07bfad54f4a0b1195e4.jpg" alt="Instalaciones de Toothie" class="d-block w-100 carrusel__img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/originals/ec/f2/87/ecf28769f879b201db1095a35476c301.jpg" alt="Exterior del local de Toothie" class="d-block w-100 carrusel__img">
+                        </div>
+                    </div>
+                    <!-- Íconos de controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </aside>
         </section>
-        <section class="main-section-button main-section--padding">
-            <!-- Button -->
-            <a href="contacto.html" class="main-section__button">
-                <input type="button" value="AGENDA TU CITA" class="button__agendar">
-            </a>
+        <section class="d-flex justify-content-center col-xs-12 mt-5 mb-5">
+            <a class="btn btn-primary btn-lg" href="./contacto.html" role="button">AGENDA TU CITA</a>
         </section>
-        <aside class="main-aside">
-            <img src="./images/carrusel_1.jpg" alt="Carrusel de imagenes" class="main-aside__carrusel main-aside__carrusel--size main-aside__carrusel--border">
-        </aside>
     </main>
 
-    <footer class="footer">
-        <p class="footer__p">Toothie | Odontología especializada | Todos los derechos reservados &copy 2022</p>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3 footer__div--bgcolor footer__div--color">
+            Toothie | Odontología especializada | Todos los derechos reservados &copy 2022
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

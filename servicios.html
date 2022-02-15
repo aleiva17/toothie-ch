@@ -4,103 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toothie | Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+    <title>Toothie | Servicios</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
-<body class="layout">
+<body class="d-flex flex-column">
     <header class="header">
-        <a href="./index.html" class="header-link">
-            <img class="header-link__logo header-link__logo--sizes" src="./images/logo_temporal.png" alt="Logo de Toothie">
-        </a>
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Inicio</a></li>
-                <li class="header-nav__item"><a href="./nosotros.html" class="header-nav__link">Nosotros</a></li>
-                <li class="header-nav__item"><a href="./servicios.html" class="header-nav__link">Servicios</a></li>
-                <li class="header-nav__item"><a href="./pacientes.html" class="header-nav__link">Nuevos pacientes</a></li>
-                <li class="header-nav__item"><a href="./contacto.html" class="header-nav__link">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top header__nav--color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    Toothie
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pacientes.html">Nuevos pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
-    <main class="main main-servicios main-servicios--grid">
-        <h1 main-servicios__title>Servicios</h1>
-        <p main-servicios__descripcion>En TOOTHIE brindamos múltiples tratamientos realizados por especialistas de primer nivel con años de experiencia en el campo correspondiente.</p>
-        <div class="container-servicios">
-            <div class="container-servicios-primeros4">
-                <!-- PRIMER SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/especializada.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Odontología Especializada</h2>
-                        <p>Es la encargada de solucionar los problemas primarios que tienen que ver con la boca, dientes y otras estructuras relacionadas. Representa, en la mayoría de los casos, el contacto iniciao del paciente con el profesional de la Odontología.</p>
-                    </div>
-                </article>
-                <!-- SEGUNDO SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/maxilofacial.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Ortodoncia y Ortopedia Maxilofacial</h2>
-                        <p>La ortodoncia es la parte de la odontología que se ocupa de corregir los defectos y las irregularidades en la posición de los dientes. Asimismo, contamos con una amplia variedad de tratamientos muy estéticos.</p>
-                    </div>
-                </article>
-                <!-- TERCER SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/implantes.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Periodoncia e Implantes</h2>
-                        <p>La periodoncia es una especialidad de la odontología que estudia la prevención, diagnóstico y tratamiento de las enfermedades y condiciones que afectan los tejidos que dan soporte a los dientes.</p>
-                    </div>
-                </article>
-                <!-- CUARTO SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/estetica.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Odontología Estética y Restauradora</h2>
-                        <p>La estética dental es una especialidad que soluciona los problemas relacionados con la salud bucal y la armonía estética de la boca en su totalidad.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="container-servicios-ultimos4">
-                <!-- QUINTO SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/odontopediatria.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Odontopediatría</h2>
-                        <p>La odontopediatría es una especialidad que estudia la prevención y tratamiento de las enfermedades dentales que ocurran en los niños.</p>
-                    </div>
-                </article>
-                <!-- SEXTO SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/endodoncia.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Endodoncia</h2>
-                        <p>La endodoncia estudia las enfermedades de la pulpa de los dientes y sus técnicas de curación.</p>
-                    </div>
-                </article>
-                <!-- SÉPTIMO SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/rehabilitacion.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Rehabilitación Oral</h2>
-                        <p>Es la parte de la Odontología encargada de la restauranción. Es decir, devuelve la función estética y armonía oral mediante prótesis dentales debido a la pérdida de dientes, grandes destrucción y buscar solucionar problemas estéticos, teniendo como fin, una correcta oclusión y función.</p>
-                    </div>
-                </article>
+    <main class="container-fluid main-content">
+        <h1 class="text-center mt-3">Servicios</h1>
+        <p class="text-center">En TOOTHIE brindamos múltiples tratamientos realizados por especialistas de primer nivel con años de experiencia en el campo correspondiente.</p>
+        <div class="row d-flex gap-3 justify-content-center mx-1 my-3">
+            <!-- PRIMER SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/especializada.png" alt="Icono del servicio" >
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Odontología Especializada</h2>
+                    <p class="mb-3">Es la encargada de solucionar los problemas primarios que tienen que ver con la boca, dientes y otras estructuras relacionadas. Representa, en la mayoría de los casos, el contacto inicial del paciente con el profesional de la Odontología.</p>
+                </div>
+            </article>
+            <!-- SEGUNDO SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/maxilofacial.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Ortodoncia y Ortopedia Maxilofacial</h2>
+                    <p class="mb-3">La ortodoncia es la parte de la odontología que se ocupa de corregir los defectos y las irregularidades en la posición de los dientes. Asimismo, contamos con una amplia variedad de tratamientos muy estéticos.</p>
+                </div>
+            </article>
+            <!-- TERCER SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/implantes.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Periodoncia e Implantes</h2>
+                    <p class="mb-3">La periodoncia es una especialidad de la odontología que estudia la prevención, diagnóstico y tratamiento de las enfermedades y condiciones que afectan los tejidos que dan soporte a los dientes.</p>
+                </div>
+            </article>
+            <!-- CUARTO SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/estetica.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Odontología Estética y Restauradora</h2>
+                    <p class="mb-3">La estética dental es una especialidad que soluciona los problemas relacionados con la salud bucal y la armonía estética de la boca en su totalidad.</p>
+                </div>
+            </article>
+            <!-- QUINTO SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/odontopediatria.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Odontopediatría</h2>
+                    <p class="mb-3">La odontopediatría es una especialidad que estudia la prevención y tratamiento de las enfermedades dentales que ocurran en los niños.</p>
+                </div>
+            </article>
+            <!-- SEXTO SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/endodoncia.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Endodoncia</h2>
+                    <p class="mb-3">La endodoncia estudia las enfermedades de la pulpa de los dientes y sus técnicas de curación.</p>
+                </div>
+            </article>
+            <!-- SÉPTIMO SERVICIO -->
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/rehabilitacion.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Rehabilitación Oral</h2>
+                    <p class="mb-3">Es la parte de la Odontología encargada de la restauranción. Es decir, devuelve la función estética y armonía oral mediante prótesis dentales debido a la pérdida de dientes, grandes destrucción y buscar solucionar problemas estéticos, teniendo como fin, una correcta oclusión y función.</p>
+                </div>
+            </article>
                 <!-- OCTAVO SERVICIO -->
-                <article class="article-servicio container-row">
-                    <img src="./images/cirugia.png" alt="Icono del servicio" class="service-icon card__image">
-                    <div>
-                        <h2>Cirugía Buco Maxilofacial</h2>
-                        <p>La cirugía orla y maxilofacial es una especialidad que incluye el diagnóstico, cirugía y tratamientos de una gran variedad de enfermedades, heridas y problemas estéticos de la boca y la cara.</p>
-                    </div>
-                </article>
-            </div>
+            <article class="horizontal-card horizontal-card--border horizontal-card--background col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="horizontal-card-img" src="./images/cirugia.png" alt="Icono del servicio">
+                <div class="horizontal-card-info">
+                    <h2 class="mt-3 mb-3">Cirugía Buco Maxilofacial</h2>
+                    <p class="mb-3">La cirugía orla y maxilofacial es una especialidad que incluye el diagnóstico, cirugía y tratamientos de una gran variedad de enfermedades, heridas y problemas estéticos de la boca y la cara.</p>
+                </div>
+            </article>
         </div>
     </main>
 
-    <footer class="footer">
-        <p class="footer__p">Toothie | Odontología especializada | Todos los derechos reservados &copy 2022</p>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3 footer__div--bgcolor footer__div--color">
+            Toothie | Odontología especializada | Todos los derechos reservados &copy 2022
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
