@@ -1,0 +1,9 @@
+@use '../utilities/variables';
+
+.footer__div--bgcolor {
+    background-color: variables.$primary-color;
+}
+
+.footer__div--color {
+    color: white;
+}

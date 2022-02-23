@@ -1,0 +1,11 @@
+@use './utilities/variables';
+@use './reset/reset';
+
+@use './layout/header';
+@use './layout/footer';
+
+@use './pages/index';
+@use './pages/nosotros';
+@use './pages/servicios';
+@use './pages/pacientes';
+@use './pages/contacto';

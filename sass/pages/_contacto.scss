@@ -1,0 +1,30 @@
+@use '../utilities/variables';
+
+.ul__no-style {
+    list-style: none;
+}
+
+.btn-formulario__width {
+    width: 40%;
+    min-width: fit-content;
+}
+
+.form__card {
+    background-color: variables.$form-card-color;
+    border-radius: 1.8rem;
+}
+
+.mapa {
+    border-radius: 5%;
+}
+
+.iframe-container {
+    overflow: hidden;
+    width: 90%;
+    height: 75%;
+}
+
+.responsive-iframe {
+    width: 100%;
+    height: 100%;
+}

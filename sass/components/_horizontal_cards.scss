@@ -1,0 +1,34 @@
+@use '../utilities/variables';
+
+.horizontal-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50rem;
+}
+
+.horizontal-card--background {
+    background-color: variables.$horizontal-card-color;
+}
+
+.horizontal-card--border {
+    border-radius: 0.8rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.horizontal-card-img {
+    height: 4rem;
+    margin: 0.5rem;
+}
+
+.horizontal-card-icon {
+    font-size: 1.5rem;
+}
+
+.horizontal-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

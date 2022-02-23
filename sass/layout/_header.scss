@@ -1,0 +1,5 @@
+@use '../utilities/variables';
+
+.header__nav--color {
+    background-color: variables.$primary-color;
+}

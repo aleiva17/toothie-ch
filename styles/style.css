@@ -1,109 +1,108 @@
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
-/* HEADER */
 .header__nav--color {
-    background-color: #0bdbb6;
+  background-color: #0bdbb6;
 }
 
-/* MAIN */
-.logo-image {
-    max-width: 180px;
-}
-
-.main-content {
-    overflow: auto;
-    flex: 1;
-}
-
-.section__hr--size {
-    width: 40%;
-}
-
-.carrusel__img {
-    object-fit: cover;
-}
-
-.ul-beneficios {
-    list-style-position: inside;
-}
-
-.icono-subtitulos {
-    font-size: 1.5rem;
-}
-
-.card__width {
-    width: 25rem;
-}
-
-.horizontal-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 50rem;
-}
-
-.horizontal-card--background {
-    background-color: #f9f6f2;
-}
-
-.horizontal-card--border {
-    border-radius: 0.8rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-}
-
-.horizontal-card-img {
-    height: 4rem;
-    margin: 0.5rem;
-}
-
-.horizontal-card-icon {
-    font-size: 1.5rem;
-}
-
-.horizontal-card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.ul__no-style {
-    list-style: none;
-}
-
-.btn-formulario__width {
-    width: 40%;
-    min-width: fit-content;
-}
-
-.form__card {
-    background-color: #092e53;
-    border-radius: 1.8rem;
-}
-
-.mapa {
-    border-radius: 5%;
-}
-
-.iframe-container {
-    overflow: hidden;
-    width: 90%;
-    height: 75%;
-}
-
-.responsive-iframe {
-    width: 100%;
-    height: 100%;
-}
-
-/* FOOTER */
 .footer__div--bgcolor {
-    background-color: #0bdbb6;
+  background-color: #0bdbb6;
 }
 
 .footer__div--color {
-    color: white;
+  color: white;
 }
+
+.logo-image {
+  max-width: 180px;
+}
+
+.main-content {
+  overflow: auto;
+  flex: 1;
+}
+
+.section__hr--size {
+  width: 40%;
+}
+
+.carrusel__img {
+  object-fit: cover;
+}
+
+.ul-beneficios {
+  list-style-position: inside;
+}
+
+.icono-subtitulos {
+  font-size: 1.5rem;
+}
+
+.card__width {
+  width: 25rem;
+}
+
+.horizontal-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 50rem;
+}
+
+.horizontal-card--background {
+  background-color: #f9f6f2;
+}
+
+.horizontal-card--border {
+  border-radius: 0.8rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.horizontal-card-img {
+  height: 4rem;
+  margin: 0.5rem;
+}
+
+.horizontal-card-icon {
+  font-size: 1.5rem;
+}
+
+.horizontal-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ul__no-style {
+  list-style: none;
+}
+
+.btn-formulario__width {
+  width: 40%;
+  min-width: fit-content;
+}
+
+.form__card {
+  background-color: #092e53;
+  border-radius: 1.8rem;
+}
+
+.mapa {
+  border-radius: 5%;
+}
+
+.iframe-container {
+  overflow: hidden;
+  width: 90%;
+  height: 75%;
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
