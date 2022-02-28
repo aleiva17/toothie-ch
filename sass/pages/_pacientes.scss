@@ -1,2 +1,11 @@
 // No hace falta el import pero para que tenga lógica la estructura
 @use '../components/horizontal_cards';
+
+.empresa-logo-container {
+    min-height: 100px;
+}
+
+.logo-empresa-aseguradora {
+    max-width: 180px;
+    height: auto;
+}

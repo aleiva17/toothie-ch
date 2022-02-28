@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Toothie | Contacto</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- SEO -->
+    <meta name="description" content="Agenda tu cita con nosotros aquí. También tienes nuestra información de contacto y ubicación geográfica.">
+    <meta name="keywords" content="Toothie agenda, Toothie cita, Toothie número de teléfono, Toothie Redes, Toothie contacto, Toothie ubicación, Toothie Google Maps">
 </head>
 <body class="d-flex flex-column">
     <header class="header">
@@ -44,7 +47,20 @@
     </header>
 
     <main class="container-fluid main-content">
-        <h1 class="text-center mt-3">Contacto</h1>
+        <h1 class="text-center mt-2">Contacto</h1>
+        <div class="row justify-content-center mx-0 mt-2">
+            <!-- FORMULARIO -->
+            <article class="form__card col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-1">
+                <h2 class="text-white text-center fs-3 mt-3">Escríbenos un mensaje</h2>
+                <p class="text-white text-center">Tan pronto como lo leamos recibirás una respuesta. 😄</p>
+                <form action="" class="d-flex flex-column gap-2 mb-2" autocomplete="off">
+                    <input type="text" name="nombre" id="" placeholder="Nombre" required>
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                    <textarea name="mensaje" id="" cols="30" rows="6" placeholder="Mensaje" required></textarea>
+                    <input class="btn btn-primary btn-formulario__width align-self-center" type="button" value="ENVIAR MENSAJE">   
+                </form>
+            </article>
+        </div>
         <div class="row">
             <article class="col-xs-12 col-sm-12 col-md-6">
                 <h2>Medios de contacto:</h2>
@@ -58,7 +74,7 @@
                         </div>
                     </div>
                     <!-- TELÉFONO CELULAR -->
-                    <div class="horizontal-card">
+                    <div class="horizontal-card col-xs-12">
                         <i class="fab fa-whatsapp horizontal-card-icon"></i>
                         <div class="horizontal-card-info">
                             <h3>WhatsApp</h3>
@@ -66,7 +82,7 @@
                         </div>
                     </div>
                     <!-- DIRECCIÓN -->
-                    <div class="horizontal-card">
+                    <div class="horizontal-card col-xs-12">
                         <i class="fas fa-map-marker-alt horizontal-card-icon"></i>
                         <div class="horizontal-card-info">
                             <h3>Dirección</h3>
@@ -74,7 +90,7 @@
                         </div>
                     </div>
                     <!-- HORARIO DE ATENCIÓN -->
-                    <div class="horizontal-card">
+                    <div class="horizontal-card col-xs-12">
                         <i class="far fa-clock horizontal-card-icon"></i>
                         <div class="horizontal-card-info">
                             <h3>Horario de atención</h3>
@@ -86,22 +102,9 @@
              <!-- GOOGLE MAPS -->
              <article class="col-xs-12 col-sm-12 col-md-6">
                 <h2>Ubicación:</h2>
-                <div class="embed-responsive embed-responsive-16by9 iframe-container d-flex justify-content-center mt-3 mb-5">
+                <div class="embed-responsive embed-responsive-16by9 iframe-container d-flex justify-content-center mt-0 mb-0">
                     <iframe class="embed-responsive-item mapa responsive-iframe align-self-center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7801.465827009035!2d-76.983275!3d-12.130418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b875b691ee71%3A0xf4cb040c502444cc!2sC.%20Aldabas%20559%2C%20Santiago%20de%20Surco%2015039%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1642004919985!5m2!1ses!2sus" allowfullscreen loading="lazy"></iframe>
                 </div>
-            </article>
-        </div>
-        <div class="row justify-content-center mx-0">
-            <!-- FORMULARIO -->
-            <article class="form__card col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-1">
-                <h2 class="text-white text-center fs-3 mt-3">Escríbenos un mensaje</h2>
-                <p class="text-white text-center">Tan pronto como lo leamos recibirás una respuesta. 😄</p>
-                <form action="" class="d-flex flex-column gap-2 mb-2" autocomplete="off">
-                    <input type="text" name="nombre" id="" placeholder="Nombre" required>
-                    <input type="email" name="email" id="" placeholder="Email" required>
-                    <textarea name="mensaje" id="" cols="30" rows="6" placeholder="Mensaje" required></textarea>
-                    <input class="btn btn-primary btn-formulario__width align-self-center" type="button" value="ENVIAR MENSAJE">   
-                </form>
             </article>
         </div>
     </main>

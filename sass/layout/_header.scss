@@ -1,5 +1,5 @@
 @use '../utilities/variables';
 
 .header__nav--color {
-    background-color: variables.$primary-color;
+    background-color: map-get(variables.$colors, "primary-color");
 }

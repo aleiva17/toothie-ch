@@ -1,2 +1,18 @@
 // No hace falta el import pero para que tenga lógica la estructura
 @use '../components/horizontal_cards';
+// Mejor visualización en Galaxy Fold
+@media (max-width: 280px) {
+    .horizontal-card__servicios {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .horizontal-card-img {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .h2__servicios {
+        text-align: center;
+    }
+}

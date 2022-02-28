@@ -1,7 +1,7 @@
 @use '../utilities/variables';
 
 .footer__div--bgcolor {
-    background-color: variables.$primary-color;
+    background-color: map-get(variables.$colors, primary-color);
 }
 
 .footer__div--color {

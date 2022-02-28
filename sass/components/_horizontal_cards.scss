@@ -8,7 +8,7 @@
 }
 
 .horizontal-card--background {
-    background-color: variables.$horizontal-card-color;
+    background-color: map-get(variables.$components-colors, "horizontal-card-color");
 }
 
 .horizontal-card--border {

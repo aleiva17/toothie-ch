@@ -1,3 +1,8 @@
-$primary-color: #0bdbb6;
-$horizontal-card-color: #f9f6f2;
-$form-card-color: #092e53;
+$colors:(
+    "primary-color": #0bdbb6
+);
+
+$components-colors:(
+    "horizontal-card-color": #f9f6f2,
+    "form-card-color": #092e53
+);
