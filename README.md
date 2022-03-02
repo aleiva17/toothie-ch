@@ -9,7 +9,7 @@
     A dental clinic responsive website using HTML, BOOTSTRAP 5 and SASS with SEO.
     <br />
     <br />
-    <a href="https://www.google.com">View Demo</a>
+    <a href="https://toothie.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/aleiva17/toothie-ch/issues">Report Bug</a>
   </p>
@@ -18,7 +18,7 @@
 ## About The Project
 
 ### Main Page
-[![Toothie Main Page][website-main-page]](https://www.google.com)
+[![Toothie Main Page][website-main-page]](https://toothie.netlify.app/)
 
 ### Built With
 
