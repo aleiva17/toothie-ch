@@ -16,14 +16,9 @@
 }
 
 .mapa {
-    border-radius: 5%;
-}
-
-.iframe-container {
-    overflow: hidden;
-    @include mixins.sizes(90%, 75%);
+    border-radius: 1rem;
 }
 
 .responsive-iframe {
-    @include mixins.sizes(100%, 100%);
+    @include mixins.sizes(100%, 90%);
 }

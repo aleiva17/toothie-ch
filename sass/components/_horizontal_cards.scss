@@ -7,6 +7,10 @@
     width: 50rem;
 }
 
+.scalable-card:hover {
+    transform: scale(1.03);
+}
+
 .horizontal-card--background {
     background-color: map-get(variables.$components-colors, "horizontal-card-color");
 }

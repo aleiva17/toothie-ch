@@ -22,11 +22,12 @@
 
 ### Built With
 
-This project was done with the following technologies and libraries.
+This project was done with the following technologies, frameworks and libraries.
 
 * [Sass](https://sass-lang.com/)
 * [Bootstrap](https://getbootstrap.com)
 * [Font Awesome](https://fontawesome.com/)
+* [Animate CSS](https://animate.style/)
 
 ## License
 
